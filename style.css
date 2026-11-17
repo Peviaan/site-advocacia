@@ -708,8 +708,8 @@ body {
 @media (max-width: 992px) {
 
     .hero, .about-section, .areas-section, .steps-section, .contact-section {
-        padding-left: 8% !important;
-        padding-right: 8% !important;
+        padding-left: 4% !important;
+        padding-right: 4% !important;
     } 
 
     .hero h1 {
