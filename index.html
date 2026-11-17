@@ -472,7 +472,8 @@
                 const numero = "55000000000";
                const texto = `Olá! Gostaria de agendar uma consulta. Preciso de orientações sobre: ${assunto}.`;
                 const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-                window.open(url, '_blank');
+
+                window.location.href = url;
             } else {
                 alert('Por favor, selecione um assunto antes de continuar.');
             }
