@@ -355,7 +355,7 @@ body {
     justify-content: center;
     gap: 2rem;
     position: relative;
-    height: 450px;
+    height: 500px;
 }
 
 .carousel-3d {
@@ -370,7 +370,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 380px;
+    min-height: 400px;
+    height: auto;
     background-color: #fff;
     border-radius: 20px;
     padding: 2.5rem;
@@ -705,6 +706,11 @@ body {
 }
 
 @media (max-width: 992px) {
+
+    .about-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .hero{
         flex-direction: column;
         text-align: center;
