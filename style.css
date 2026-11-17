@@ -707,17 +707,37 @@ body {
 
 @media (max-width: 992px) {
 
+    .hero, .about-section, .areas-section, .steps-section, .contact-section {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    } 
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-text h2, .areas-header h2 {
+        font-size: 2.2rem;
+    }
+
     .about-section {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .hero{
         flex-direction: column;
         text-align: center;
     }
 
     .hero-buttons {
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
     }
 
     .nav-links {
@@ -727,7 +747,7 @@ body {
     .floating-card {
         left: 50%;
         transform: translateX(-50%);
-        width: 85%;
+        width: 90%;
         justify-content: center;
     }
 
@@ -738,17 +758,24 @@ body {
 
     .lawyer-card {
         margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .floating-social {
-        left: 20px;
-        top: 350px;
+        position: relative;
+        top: -30px;
+        left: 0;
+        width: 90%;
+        text-align: center;
+        align-items: center;
     }
 
-    .card-3d.prev { transform: translateX(-20%) scale(0.85) translateZ(-100px); opacity: 0; }
-    .card-3d.next { transform: translateX(20%) scale(0.85) translateZ(-100px); opacity: 0; }
+    .card-3d.prev { transform: translateX(-35%) scale(0.85) translateZ(-100px); opacity: 0.4; }
+    .card-3d.next { transform: translateX(35%) scale(0.85) translateZ(-100px); opacity: 0.4; }
     .carousel-wrapper { gap: 0.5rem; }
-    .carousel-3d { width: 300px; }
+    .carousel-3d { width: 100%; max-width: 300px; }
 
     .tabs-wrapper { padding: 2rem 1.5rem; }
     .tabs-menu {
